@@ -9,17 +9,17 @@
 #   end
 
 
-student = Student.create(
-    name: 'swaroop',
-    email: 'swaroop@mail.com',
-    phone: 987463210
-)
+# student = Student.create(
+#     name: 'swaroop',
+#     email: 'swaroop@mail.com',
+#     phone: 987463210
+# )
 
-mentor = Mentor.create(
-    name: 'navin',
-    email: 'navin@mail.com',
-)
+# mentor = Mentor.create(
+#     name: 'navin',
+#     email: 'navin@mail.com',
+# )
 
-
-mentor.create_address(city: "rjy", state: "AP", pin: 563)
-student.create_address(city: "rjy", state: "AP", pin: 563)
+# if mentor.address.create() doesn't works use, mentor.build_address() && mentor.save but mentor.create_address() is easier than previous method.
+# mentor.create_address(city: "rjy", state: "AP", pin: 563)
+# student.create_address(city: "rjy", state: "AP", pin: 563)
